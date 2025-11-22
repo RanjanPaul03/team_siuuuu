@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path Discovery & Roadmap Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>CareerGram</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#discover">Discover</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Filter Your Focus, Frame Your Future</h1>
+                <p class="hero-subtitle">Don't Wait For The Update,Be The Upgrade!<br /> Take our assessment and get a personalized roadmap to your dream career</p>
+                <button class="btn btn-primary" onclick="scrollToDiscover()">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card-1"><img src="image1.png.jpeg" alt=""></div>
+                <div class="floating-card card-2"><img src="image2.png.jpeg" alt=""></div>
+                <div class="floating-card card-3"><img src="image3.png.jpeg" alt=""></div>
+                <div class="floating-card card-4"><img src="image4.png.jpeg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Discovery Section -->
+    <section id="discover" class="discover-section">
+        <div class="container">
+            <h2 class="section-title">Career Discovery Assessment</h2>
+            <p class="section-subtitle">Answer a few questions to discover career paths that match your interests and skills</p>
+            
+            <div class="assessment-container">
+                <div id="assessment-progress" class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                
+                <div id="question-container" class="question-container">
+                    <!-- Questions will be dynamically inserted here -->
+                </div>
+
+                <div id="results-container" class="results-container hidden">
+                    <h3>Your Career Matches</h3>
+                    <div id="career-results" class="career-cards">
+                        <!-- Career suggestions will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap-section">
+        <div class="container">
+            <h2 class="section-title">Your Career Roadmap</h2>
+            <p class="section-subtitle">Select a career path to see a detailed roadmap</p>
+            
+            <div class="roadmap-controls">
+                <select id="career-select" class="career-select">
+                    <option value="">Select a career path...</option>
+                </select>
+                <button id="generate-roadmap" class="btn btn-secondary">Generate Roadmap</button>
+            </div>
+
+            <div id="roadmap-container" class="roadmap-container hidden">
+                <div class="roadmap-timeline">
+                    <!-- Roadmap steps will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About CareerPath</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-icon">🎯</div>
+                    <h3>Personalized Discovery</h3>
+                    <p>Our assessment analyzes your interests, skills, and goals to suggest the best career paths for you.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🗺️</div>
+                    <h3>Detailed Roadmaps</h3>
+                    <p>Get step-by-step roadmaps with milestones, skills to learn, and resources to help you succeed.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">📚</div>
+                    <h3>Learning Resources</h3>
+                    <p>Access curated learning resources, courses, and certifications for your chosen career path.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CareerPath. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
