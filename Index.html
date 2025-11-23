@@ -20,76 +20,240 @@
                 <li><a href="#roadmap">Roadmap</a></li>
                 <li><a href="#about">About</a></li>
             </ul>
+            <div class="nav-auth">
+                <button class="btn btn-outline" id="login-btn">Log In</button>
+                <button class="btn btn-primary" id="signup-btn">Sign Up</button>
+            </div>
         </div>
     </nav>
-<!-- learn git setup -->
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Filter Your Focus, Frame Your Future</h1>
-                <p class="hero-subtitle">Don't Wait For The Update,Be The Upgrade!<br /> Take our assessment and get a personalized roadmap to your dream career</p>
-                <button class="btn btn-primary" onclick="scrollToDiscover()">Get Started</button>
-            </div>
-            <div class="hero-image">
-                <div class="floating-card card-1"><img src="image1.png.jpeg" alt=""></div>
-                <div class="floating-card card-2"><img src="image2.png.jpeg" alt=""></div>
-                <div class="floating-card card-3"><img src="image3.png.jpeg" alt=""></div>
-                <div class="floating-card card-4"><img src="image4.png.jpeg" alt=""></div>
+            <div class="hero-box">
+                <div class="hero-content">
+                    <h1 class="hero-title">Filter Your Focus, Frame Your Future</h1>
+                    <p class="hero-subtitle">Don't Wait For The Update,Be The Upgrade!<br /> Take our assessment and get a personalized roadmap to your dream career</p>
+                    <button class="btn btn-primary" onclick="scrollToDiscover()">Get Started</button>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card card-1"><img src="image1.png.jpeg" alt=""></div>
+                    <div class="floating-card card-2"><img src="image2.png.jpeg" alt=""></div>
+                    <div class="floating-card card-3"><img src="image3.png.jpeg" alt=""></div>
+                    <div class="floating-card card-4"><img src="image4.png.jpeg" alt=""></div>
+                </div>
             </div>
         </div>
-    </section>
+    </section>    
 
     <!-- Career Discovery Section -->
     <section id="discover" class="discover-section">
         <div class="container">
-            <h2 class="section-title">Career Discovery Assessment</h2>
-            <p class="section-subtitle">Answer a few questions to discover career paths that match your interests and skills</p>
-            
-            <div class="assessment-container">
-                <div id="assessment-progress" class="progress-bar">
-                    <div id="progress-fill" class="progress-fill"></div>
+            <h2 class="section-title">Discover Your Perfect Career</h2>
+            <p class="section-subtitle">Make smart decisions with our revolutionary AI enabled career guidance tools and expert career counsellors</p>
+            <button id="discover-get-started" class="btn btn-secondary">Get Started</button>
+            <div class="service-links">
+                <div class="service-line">
+                    <a href="#">Career Assessment</a>
+                    <span class="separator">|</span>
+                    <a href="#">Personalised Guidance</a>
+                    <span class="separator">|</span>
+                    <a href="#">Profile Building</a>
+                    <span class="separator">|</span>
+                    <a href="#">Virtual Internships</a>
                 </div>
-                
-                <div id="question-container" class="question-container">
-                    <!-- Questions will be dynamically inserted here -->
+                <div class="service-line">
+                    <a href="#">College Roadmap Planning</a>
+                    <span class="separator">|</span>
+                    <a href="#">College Applications</a>
+                    <span class="separator">|</span>
+                    <a href="#">Scholarship Hunt</a>
                 </div>
-
-                <div id="results-container" class="results-container hidden">
-                    <h3>Your Career Matches</h3>
-                    <div id="career-results" class="career-cards">
-                        <!-- Career suggestions will be displayed here -->
+            </div>
+            <div class="discover-image">
+                <img src="image5.png.svg" alt="Career Discovery">
+            </div>
+        </div>
+        <!-- Statistics Bar -->
+        <div class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <img src="Group 1310.svg" alt="Students Impacted">
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">3 Million</div>
+                            <div class="stat-label">Students Impacted</div>
+                        </div>
                     </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <img src="Group 1311.svg" alt="Educators Certified">
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">70,000</div>
+                            <div class="stat-label">Educators Certified</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <img src="Group 1312.svg" alt="Partner Schools">
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">250+</div>
+                            <div class="stat-label">Partner Schools</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <img src="Group 1313.svg" alt="University Partners">
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">University Partners</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards and Recognition Section -->
+    <section class="awards-section">
+        <div class="container">
+            <h2 class="section-title">Awards and Recognition</h2>
+            <div class="awards-container">
+                <button class="awards-nav-btn awards-nav-left" onclick="scrollAwards('left')">
+                    <img src="left.svg" alt="Previous">
+                </button>
+                <div class="awards-scroll">
+                    <div class="awards-grid">
+                        <div class="award-item">
+                            <div class="award-icon">🏆</div>
+                            <div class="award-text">Department of Science & Technology, Government of India</div>
+                        </div>
+                        <div class="award-item">
+                            <div class="award-icon">🏆</div>
+                            <div class="award-text">Indian School of Business, Hyderabad & US Consulate</div>
+                        </div>
+                        <div class="award-item">
+                            <div class="award-icon">🏆</div>
+                            <div class="award-text">Ministry of Commerce & Industry, DPIIT</div>
+                        </div>
+                        <div class="award-item">
+                            <div class="award-icon">🏆</div>
+                            <div class="award-text">Minister of State, UAE Government</div>
+                        </div>
+                        <div class="award-item">
+                            <div class="award-icon">🏆</div>
+                            <div class="award-text">The Power of Ideas: Economic Times IIM-A, CIIE</div>
+                        </div>
+                        <div class="award-item">
+                            <div class="award-icon">🏆</div>
+                            <div class="award-text">HolonIQ: Top 100 Ed-Tech India & South Asia</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="awards-nav-btn awards-nav-right" onclick="scrollAwards('right')">
+                    <img src="right.svg" alt="Next">
+                </button>
+            </div>
+        </div>
+<!-- Explore Section -->
+    </section>
+        <section id="explore" class="explore-section">
+           <h2 class="section-title">Filling Puzzled, Confused What's Next After 12th?</h2>
+           <p class="section-subtitle">Come Let's Explore</p>
+
+        <div class="container">
+            <div class="explore-box">
+                <div class="hero-content">
+                    <h1 class="hero-title">Science<br>(PCM, PCB)</h1>
+                    <p class="hero-subtitle">PCM for students interested in technology, engineering, architecture, and defense services.<br>PCB The path for aspiring doctors, pharmacists, biotechnologists, and researchers.</p>
+                    <button class="btn btn-primary explore-btn" data-stream="pcm" onclick="handleExploreClick('pcm')">Explore</button>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card card-1"><img src="image6.jpg" alt=""></div>
+                    <div class="floating-card card-2"><img src="image7.jpg" alt=""></div>
+                    <div class="floating-card card-3"><img src="image8.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="container commerce-container">
+            <div class="explore-box">
+                <div class="hero-content">
+                    <h1 class="hero-title">Commerce<br>Business & Finance</h1>
+                    <p class="hero-subtitle">Ideal for those who love numbers, business management, finance, and economics.</p>
+                    <button class="btn btn-primary explore-btn" data-stream="commerce" onclick="handleExploreClick('commerce')">Explore</button>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card card-1"><img src="image10.jpg" alt=""></div>
+                    <div class="floating-card card-2"><img src="image11.jpg" alt=""></div>
+                    <div class="floating-card card-3"><img src="image12.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="explore-box">
+                <div class="hero-content">
+                    <h1 class="hero-title">Arts & Humanities<br>Creativity & Social Sciences</h1>
+                    <p class="hero-subtitle">For creative minds interested in law, design, media, psychology, and civil services.</p>
+                    <button class="btn btn-primary explore-btn" data-stream="arts" onclick="handleExploreClick('arts')">Explore</button>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card card-1"><img src="image13.jpg" alt=""></div>
+                    <div class="floating-card card-2"><img src="image14.jpg" alt=""></div>
+                    <div class="floating-card card-3"><img src="image15.png" alt=""></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Roadmap Section -->
+<!-- Roadmap Section -->
     <section id="roadmap" class="roadmap-section">
         <div class="container">
             <h2 class="section-title">Your Career Roadmap</h2>
-            <p class="section-subtitle">Select a career path to see a detailed roadmap</p>
+            <p class="section-subtitle">Select your stream and career path to see a detailed roadmap</p>
             
             <div class="roadmap-controls">
-                <select id="career-select" class="career-select">
-                    <option value="">Select a career path...</option>
-                </select>
+                <div class="select-group">
+                    <label for="stream-select">Select Stream (After 10th):</label>
+                    <select id="stream-select" class="career-select">
+                        <option value="">Choose your stream...</option>
+                        <option value="pcm">Science PCM (Physics, Chemistry, Mathematics)</option>
+                        <option value="pcb">Science PCB (Physics, Chemistry, Biology)</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="arts">Arts/Humanities</option>
+                    </select>
+                </div>
+                
+                <div class="select-group">
+                    <label for="career-select">Select Career Path:</label>
+                    <select id="career-select" class="career-select">
+                        <option value="">First select a stream...</option>
+                    </select>
+                </div>
+                
                 <button id="generate-roadmap" class="btn btn-secondary">Generate Roadmap</button>
             </div>
 
             <div id="roadmap-container" class="roadmap-container hidden">
+                <div id="career-info" class="career-info-section"></div>
+                <div id="exam-info" class="exam-info-section"></div>
+                <div id="college-info" class="college-info-section"></div>
                 <div class="roadmap-timeline">
                     <!-- Roadmap steps will be displayed here -->
                 </div>
             </div>
         </div>
-    </section>
+    </section>  
+
 
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
-            <h2 class="section-title">About CareerPath</h2>
+            <h2 class="section-title">About CareerGram</h2>
             <div class="about-content">
                 <div class="about-card">
                     <div class="about-icon">🎯</div>
@@ -113,10 +277,176 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 CareerPath. All rights reserved.</p>
+            <p>&copy; CareerGram. All rights reserved.</p>
         </div>
     </footer>
 
+
+    <!-- Career Assistant Chat Button -->
+    <button id="chat-button" class="chat-button" onclick="toggleChatWidget()" title="Career Assistant">
+        🤖
+    </button>
+
+    <!-- Career Assistant Chat Widget -->
+    <div id="chat-widget" class="chat-widget hidden">
+        <div class="chat-header" onclick="toggleChat()">
+            <div class="chat-header-content">
+                <div class="chat-logo">🗺️</div>
+                <div class="chat-title-group">
+                    <h3 class="chat-title">Career Architect</h3>
+                    <span class="chat-status">
+                        <span class="status-dot"></span>
+                        Online
+                    </span>
+                </div>
+            </div>
+            <button class="chat-toggle-btn" id="chat-toggle" onclick="closeChat()">×</button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message assistant-message">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content">
+                        <p>Hello! I'm your Career Architect assistant. I can help you discover career paths, understand different streams, and create personalized roadmaps. How can I assist you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" class="chat-input" placeholder="Ask about a career path (e.g., 'How do I become a Data Scientist?')" />
+                <button id="chat-send" class="chat-send-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+</body>
+
+<!-- Auth Modals -->
+<div id="login-modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('login-modal')">&times;</span>
+        <h2>Log In</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="login-gmail">Gmail</label>
+                <input type="email" id="login-gmail" name="gmail" placeholder="Enter your Gmail" required />
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="password" placeholder="Enter your password" required />
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Log In</button>
+        </form>
+    </div>
+</div>
+
+<div id="signup-modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('signup-modal')">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="signup-name">Name</label>
+                <input type="text" id="signup-name" name="name" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label for="signup-gmail">Gmail</label>
+                <input type="email" id="signup-gmail" name="gmail" placeholder="Enter your Gmail" required />
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" name="password" placeholder="Create a password" required />
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+<style>
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: opacity 0.3s;
+}
+.modal.hidden {
+    display: none;
+}
+.modal-content {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(99,102,241,0.15);
+    min-width: 320px;
+    max-width: 90vw;
+    position: relative;
+    animation: fadeInModal 0.3s;
+}
+@keyframes fadeInModal {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #6366f1;
+    cursor: pointer;
+}
+.form-group {
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+.form-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+.form-group input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+</style>
+
+<script>
+// Modal open/close logic
+document.getElementById('login-btn').onclick = function() {
+    document.getElementById('login-modal').classList.remove('hidden');
+}
+document.getElementById('signup-btn').onclick = function() {
+    document.getElementById('signup-modal').classList.remove('hidden');
+}
+function closeModal(id) {
+    document.getElementById(id).classList.add('hidden');
+}
+// Prevent form submission (no data storage)
+document.getElementById('login-form').onsubmit = function(e) { e.preventDefault(); closeModal('login-modal'); };
+document.getElementById('signup-form').onsubmit = function(e) { e.preventDefault(); closeModal('signup-modal'); };
+</script>
 </body>
 </html>
